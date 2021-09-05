@@ -108,7 +108,7 @@ se retornará un objeto con la siguiente información:
 
 ---
 
-Todo lo relacionado al chat (optener lista usuarios, obtener mensajes entre dos usuarios, etc) se manejará en el archivo **msgRouter.js**
+Todo lo relacionado al chat (optener lista usuarios, obtener mensajes entre dos usuarios, etc) se manejará en el archivo **chatRouter.js**
 
 ---
 
