@@ -195,6 +195,7 @@ En el ChatContext se manejarán todos los estados relacionados al chat en sí. E
 const initialState = {
 	users: [],
 	messages: [],
+	activeChat: ObjectId,
 };
 ```
 
