@@ -112,14 +112,6 @@ Todo lo relacionado al chat (obtener lista usuarios, obtener mensajes entre dos 
 
 ---
 
-### obtener lista de usuarios
-
-**GET** _referer/api/v1/chat/users_ -> para obtener todos los usuarios
-
-En los headers se requerirá un jwt (x-auth-token) válido para devolver la información
-
----
-
 ### obtener mensajes de un chat
 
 **GET** _referer/api/v1/chat/messages_ -> para obtener los últimos 30 mensajes entre el usuario y el chat actual
@@ -218,6 +210,34 @@ Desde este custom hook se manejará la conexión con el **socket server** median
 ## Comunicación en tiempo real
 
 Para manejar la comunicación en tiempo real entre clientes y servidor, se utilizará la librería **socket.io@4.2.0**
+
+se creara un controller **socketController** con las siguientes funciones:
+
+**setUserOnline**
+
+cambiará el estado online del usuari a true `online: true`
+
+**setUserOffline**
+
+cambiará el estado online del usuari a false `online: false`
+
+**getUsers**
+
+retornará un array con todos los usuarios registrados
+
+**saveMessage(message)**
+
+guardará en la base de datos el **message** y retornará el _msg_ con la estructura completa.
+
+la estructura del message debe ser esta:
+
+```js
+  {
+    from: ObjectId,
+    to: ObjectId,
+    msg: String
+  }
+```
 
 ---
 
