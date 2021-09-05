@@ -297,6 +297,8 @@ socket.on('disconnect', async () => {
   }
 ```
 
+- se hará la conexión al socket server (enviando el jwt en el evento)
+
 ---
 
 ## Iniciando sesión...
@@ -321,3 +323,5 @@ socket.on('disconnect', async () => {
     }
   }
 ```
+
+- se hará la conexión al socket server (enviando el jwt en el evento)
