@@ -233,7 +233,7 @@ if (!ok) {
 }
 ```
 
-Además, se debe cambiar el estado online del usuario a true `online: true`
+Si el jwt es válido, se debe cambiar el estado online del usuario a true `online: true`
 
 ```js
 await setUserOnline(uid);
