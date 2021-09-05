@@ -131,7 +131,7 @@ En el body se recibirá un objeto con la información del mensaje, así:
 
 ##### buscar chat
 
-**GET** <referer/api/v1/chat/search?q=(keyword)> -> para buscar un chat
+**GET** <referer/api/v1/chat/search?q=keyword> -> para buscar un chat
 
 Será necesario un jwt en los headers (x-auth-token) para realizar la acción.
 
