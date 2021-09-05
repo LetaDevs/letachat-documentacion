@@ -129,24 +129,6 @@ En el body se recibirá un objeto con los ObjectId de los usuarios implicados, a
 
 ---
 
-### guardar mensaje
-
-**POST** _referer/api/v1/chat/new-msg_ -> para almacenar un nuevo mensaje
-
-Será necesario un jwt en los headers (x-auth-token) para realizar la acción.
-
-En el body se recibirá un objeto con la información del mensaje, así:
-
-```js
-  {
-    from: ObjectId,
-    to: ObjectId,
-    msg: 'hola mundo'
-  }
-```
-
----
-
 ### buscar chat
 
 **GET** _referer/api/v1/chat/search?q=(keyword)_ -> para buscar un chat
